@@ -1,0 +1,41 @@
+[
+  {
+    "id": "broken-prerequisite-probability",
+    "prompt": "I don't understand P(A∩B)=P(B)P(A|B). Teach me from zero.",
+    "expected_behaviors": [
+      "builds or implies a prerequisite chain",
+      "checks intersection and conditioning before Bayes",
+      "teaches one atomic concept rather than the whole chapter",
+      "ends with a learner-generated retrieval probe"
+    ],
+    "anti_behaviors": [
+      "immediately dumps Bayes theorem",
+      "asks only whether the learner understands"
+    ]
+  },
+  {
+    "id": "false-mastery",
+    "prompt": "Okay I get it, next.",
+    "expected_behaviors": [
+      "uses a very short mastery check if no learner-generated evidence exists",
+      "does not equate confidence with mastery"
+    ]
+  },
+  {
+    "id": "misconception-debugging",
+    "prompt": "PDF is probability at exactly x, so for continuous variables P(X=x)=f(x), right?",
+    "expected_behaviors": [
+      "identifies the object confusion between density and point probability",
+      "uses a minimal counterexample or area interpretation",
+      "tests the repaired model in a new example"
+    ]
+  },
+  {
+    "id": "paper-formulation-first",
+    "prompt": "Teach me this graph privacy paper. Start with the method.",
+    "expected_behaviors": [
+      "pins down data unit, adjacency/threat model, input, output/release surface, objective, and assumptions before method details",
+      "labels ambiguity instead of silently choosing a formulation"
+    ]
+  }
+]
